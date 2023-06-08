@@ -5,9 +5,6 @@ import routes from './routes/route.js';
 import path from 'path';
 const __dirname=path.resolve();
 const app = express();
-import mongoose from 'mongoose';
-
-mongoose.set('strictQuery', false);
 
 app.use(cors());
 app.use(express.urlencoded());
